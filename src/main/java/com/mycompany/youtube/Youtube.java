@@ -15,5 +15,10 @@ public class Youtube {
         Video video= new Video(" aprendiendo Java",2400,"http://martinezmaximo.com");
         usuario.subirVideo(video);
         usuario.mostrarInfoUsuario();
+        
+        Usuario usuario2=new Usuario("Max");
+        Comentario comment1=new Comentario("ta chido", usuario2);
+        System.out.println(" El usuario"+ usuario2.getNombre()+comment1.getContenido());
+                        
     }
 }
